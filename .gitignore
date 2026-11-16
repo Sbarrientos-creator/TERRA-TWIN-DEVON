@@ -1,0 +1,8 @@
+data/raw/
+.env
+*.json.key
+.streamlit/secrets.toml
+*.tif
+__pycache__/
+.pytest_cache/
+.venv/

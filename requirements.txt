@@ -1,6 +1,12 @@
-import earthaccess
-earthaccess.login(strategy="environment")   # reads EARTHDATA_USERNAME / EARTHDATA_PASSWORD
-results = earthaccess.search_data(short_name="MOD11A1", version="061",
-                                  bounding_box=(-90.6, 75.0, -88.7, 75.4),
-                                  temporal=("2022-01-01", "2022-12-31"))
-earthaccess.download(results, "data/raw/modis")
+streamlit>=1.38
+numpy>=1.26
+pandas>=2.1
+rasterio>=1.3
+plotly>=5.20
+scipy>=1.11
+pyproj>=3.6
+pystac-client>=0.8
+earthengine-api
+earthaccess
+requests
+pytest
